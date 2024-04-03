@@ -1,0 +1,92 @@
+
+.main-container{
+    height:100%;
+    width:100%;
+  
+    box-sizing: border-box;
+    display:flex;
+    flex-direction:column;
+}
+.elgibility-container{
+    display:flex;
+    flex-direction:row;
+  
+    height:50px;
+    align-items:center;
+}
+.heading{
+    font-family:roboto;
+    font-weight:700;
+    margin-right:30%;
+    margin-left:20px;
+
+}
+@media screen and (max-width:770px) {
+    .heading{
+        font-family:roboto;
+        font-weight:500;
+        font-size:15px;
+        margin-right:22%;
+        margin-left:20px;
+        color:black
+    }
+    p{
+        font-size:10px;
+        font-family:roboto;
+    }
+    
+}
+.back{
+    color:white;
+    height:33px;
+    width:70px;
+    background-color:blue;
+    border-radius:6px;
+    border:2px solid white;
+    margin-right:14px;
+}
+.lock-image{
+    width:70px;
+    height:33px;
+    border-radius:6px;
+    border:2px solid white;
+    margin-right:14px
+}
+.upload{
+    width:170px;
+    border-radius:6px;
+    border:2px solid white;
+    background-color:blue;
+    color:white
+}
+.save-button{
+    color:white;
+    background-color:blue;
+    border:2px solid white;
+    height:40px;
+    font-family:roboto;
+    font-weight:900;
+    border-radius:7px;
+    margin-right:60px;
+ }
+.save-container{
+    display: flex; 
+    flex-direction:row;
+    justify-content:flex-end;
+}
+.sub-container{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    
+
+}
+.subject{
+    font-family:roboto;
+    font-weight:500;
+    margin-right:15%;
+    margin-left:10px
+}
+.input-text:hover{
+    background-color:white;
+}

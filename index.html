@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form id="myForm">
+  <div class="main-container">
+    <div class="elgibility-container">
+      <h1 class="heading">ELIGIBILITY VERIFICATION</h1>
+      <button class="back">Back</button>
+      <button class="lock-image"  onclick="toggleLockIcon()"><i class="fas fa-unlock" id="lock"></i></button>
+      <button class="upload" onclick="uploadFile()">Upload Source Documents</button>
+    </div>
+   
+  
+    <select>
+        <option>Does subject meet all elgibility cretireia</option>
+        <option > if No,Specify the reason for Screen Failed -Inclusion Crteria No.(s)</option>
+        <option> if No,Specify the reason for Screen Failed -Exlusion Crteria No.(s)</option>
+        <option>is subject elgibile to participate in the study</option>
+        <option > Please Provide the reason  fro screen Failure(other tham IE criteria)</option>
+    </select>
+  
+        <div class="sub-container">
+        <p class="subject">Does subject meet all elgibility cretireia</p>
+       
+            <label>
+                <input type="radio"   name="elgibility" value="yes" id="elg-yes">
+                Yes
+            </label>
+            <label>
+                <input type="radio" name="elgibility"  value="no" id="elg-no">
+                No
+            </label>
+       
+    </div>
+    <div class="sub-container" id="inc-crteria-con">
+        <p class="subject">
+            if No,Specify the reason for Screen Failed -Inclusion Crteria No.(s)
+        </p>
+        <input type="text" class="input-text" id="include"/>
+    </div>
+    <div class="sub-container" id="exc-crteria-con">
+        <p class="subject">
+            if No,Specify the reason for Screen Failed -Exlusion Crteria No.(s)
+        </p>
+        <input type="text" class="input-text" id="exclude"/>
+    </div>
+    <div class="sub-container">
+        <p class="subject">is subject elgibile to participate in the study</p>
+      
+            <label>
+                <input type="radio" name="reason" value="yes"  id="par-yes">
+                Yes
+            </label>
+            <label>
+                <input type="radio" name="reason" value="no"  id="par-no">
+                No
+            </label>
+      
+    </div>
+   
+        <div class="sub-container" id="screen-failure">
+            <p class="subject">
+            Please Provide the reason  for screen Failure(other tham IE criteria)
+         </p>
+        <input type="text" class="input-text"   id="reason-failure"/>
+        </div>
+   
+
+        <div class="save-container">  <button type="submit" class="save-button" >Save and Submit</button></div>
+   
+   </form>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
